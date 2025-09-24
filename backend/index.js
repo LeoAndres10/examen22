@@ -14,7 +14,7 @@ app.get('/producto', async (req, res) => {
    return res.json({ message: 'Listo', data:producto });
 
   } catch (error) {
-    console.error('Error al buscar alumnos:', error);
+    console.error('Error al buscar productos:', error);
     res.status(500).json({ error: 'Error del servidor' });
   }
 });
