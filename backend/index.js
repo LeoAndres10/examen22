@@ -65,7 +65,7 @@ app.delete('/items/:id', async(req,resp) =>{
     
     try {
 
-        const deleted= await Alumno.destroy({
+        const deleted= await Producto.destroy({
             where: {id: req.params.id}
         })
 
