@@ -22,7 +22,7 @@ async function agregarProducto(item: Producto){
         const respuestaApi= await respuesta.json()
 
         if(respuestaApi){
-            Alert.alert("ALumno agregado")
+            Alert.alert("Producto agregado")
         }
         else{
             Alert.alert('Ocurrio un error')
@@ -43,7 +43,7 @@ async function agregarProducto(item: Producto){
 
         if(respuestaApi){
           setListaProducto((listaAnterior: any[]) => listaAnterior.filter(item => item.id !==id))
-            Alert.alert("ALumno eliminado")
+            Alert.alert("Producto eliminado")
         }
         else{
             Alert.alert('Ocurrio un error')
@@ -53,7 +53,7 @@ async function agregarProducto(item: Producto){
     
         async function listarProductos() {
     
-            const response = await fetch('http://192.168.0.7:5000/alumno', {
+            const response = await fetch('http://192.168.0.7:5000/productos', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
