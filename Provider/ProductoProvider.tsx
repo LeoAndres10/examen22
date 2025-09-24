@@ -53,7 +53,7 @@ async function agregarProducto(item: Producto){
     
         async function listarProductos() {
     
-            const response = await fetch('http://192.168.0.7:5000/productos', {
+            const response = await fetch('http://192.168.0.7:5000/producto', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
