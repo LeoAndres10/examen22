@@ -42,7 +42,7 @@ app.post('/productos', async (req, res) => {
   
 
     res.status(201).json({
-      message: 'Usuario creado correctamente',
+      message: 'Producto creado correctamente',
       user: {
         id: newProducto.id,
         nombre: newProducto.nombre,
